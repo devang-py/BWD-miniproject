@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - web player for everyone</title>
+    <!--fonts code-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="sideBar">
+            <div class="nav">
+                <div class="nav-options">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">home</a>
+                </div>
+                <div class="nav-options">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-options">
+                       <img src="library_icon.png" alt="">
+                       <a href="#">your library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">create ur first playlist </p>
+                        <p class="box-p2">its easy we'll help you</p>
+                        <button class="badge"> create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">lets find some podcats to follow </p>
+                        <p class="box-p2">we'll keep you updated for new episodes</p>
+                        <button class="badge"> browse podcat </button>
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+        <div class="mainContent">
+            <div class="sticky-nav">
+
+                <div class="sticky-nav-icons">
+                     <img src="backward_icon.png" alt="" class="backward-button hide">
+                     <img src="forward_icon.png" alt="" class="forward-button">
+                </div>
+                <div class="sticky-nav-options">
+                     <button class="badge nav-item hide"> explore premium  </button>
+                     <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down"></i> install app </button>
+                     <i class="fa-regular fa-user nav-item"></i>
+                </div>
+                
+            </div>
+            
+            <h2>Recently played</h2>
+            <!-- <div class="card-container">
+                <div class="card">
+                    <img src="card1img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+            </div> -->
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="card1img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+
+                <div class="card">
+                    <img src="card2img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+
+                <div class="card">
+                    <img src="card3img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+
+                <div class="card">
+                    <img src="card4img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+
+                <div class="card">
+                    <img src="card4img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+
+            </div>
+
+
+
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card1img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+                <div class="card">
+                    <img src="card2img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+                <div class="card">
+                    <img src="card3img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+                <div class="card">
+                    <img src="card5img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+                <div class="card">
+                    <img src="card5img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+
+            </div>
+
+        <h2>Featured Global Songs</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="card3img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+                <div class="card">
+                    <img src="card5img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" alt="" class="card-image">
+                    <p class="card-title">top 50 global </p>
+                    <p class="card-info">your audible update for daily track...</p>
+                </div>
+
+            </div>
+
+            <div class="footer"> 
+                <div class="line"></div>
+            </div>
+
+        </div>
+    
+        <div class="musicPlayer">
+            <div class="player-wrapper">
+                <!-- track info (optional cover + title/artist) -->
+                <div class="track-info">
+                    <img src="play_musicbar.png" alt="cover" class="track-cover">
+                    <div class="track-meta">
+                        <p class="track-title">Song Title</p>
+                        <p class="track-artist">Artist Name</p>
+                    </div>
+                </div>
+
+                <!-- main controls -->
+                <div class="controls">
+                    <img src="player_icon1.png" alt="shuffle" class="control-icon shuffle">
+                    <img src="player_icon2.png" alt="previous" class="control-icon prev">
+                    <img src="play_musicbar.png" alt="play" class="control-icon play">
+                    <img src="player_icon4.png" alt="next" class="control-icon next">
+                    <img src="player_icon5.png" alt="repeat" class="control-icon repeat">
+                </div>
+
+                <!-- progress bar (simple placeholder) -->
+                <div class="progress-container">
+                    <span class="time current">0:00</span>
+                    <div class="progress-bar">
+                        <div class="progress-filled"></div>
+                    </div>
+                    <span class="time duration">3:45</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
