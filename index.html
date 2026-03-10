@@ -190,6 +190,7 @@
         </div>
     
         <div class="musicPlayer">
+            <audio id="audio-player" src="Golden brown x Love story ( slowed) Tiktok version.mp3"></audio>
             <div class="player-wrapper">
                 <!-- track info (optional cover + title/artist) -->
                 <div class="track-info">
@@ -204,21 +205,22 @@
                 <div class="controls">
                     <img src="player_icon1.png" alt="shuffle" class="control-icon shuffle">
                     <img src="player_icon2.png" alt="previous" class="control-icon prev">
-                    <img src="play_musicbar.png" alt="play" class="control-icon play">
+                    <img src="play_musicbar.png" alt="play" id="play-btn" class="control-icon play">
                     <img src="player_icon4.png" alt="next" class="control-icon next">
                     <img src="player_icon5.png" alt="repeat" class="control-icon repeat">
                 </div>
 
                 <!-- progress bar (simple placeholder) -->
-                <div class="progress-container">
-                    <span class="time current">0:00</span>
-                    <div class="progress-bar">
-                        <div class="progress-filled"></div>
+                <div class="progress-container" id="progress-container">
+                    <span class="time current" id="current-time">0:00</span>
+                    <div class="progress-bar" id="progress-bar">
+                        <div class="progress-filled" id="progress-filled"></div>
                     </div>
-                    <span class="time duration">3:45</span>
+                    <span class="time duration" id="duration">0:00</span>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
