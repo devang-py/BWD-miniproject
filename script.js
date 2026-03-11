@@ -7,6 +7,14 @@ const progressFilled = document.getElementById('progress-filled');
 const currentTimeEl = document.getElementById('current-time');
 const durationEl = document.getElementById('duration');
 
+// track display elements
+const trackTitleEl = document.querySelector('.track-title');
+const trackArtistEl = document.querySelector('.track-artist');
+
+// set default info immediately (shape of you is the default source)
+trackTitleEl.textContent = 'Shape of You';
+trackArtistEl.textContent = 'Unknown';
+
 // icons (use play image plus an alternate image for pause)
 const playIcon = 'play_musicbar.png';
 const pauseIcon = 'player_icon3.png'; // using the third player icon as a pause indicator
@@ -42,6 +50,25 @@ playBtn.addEventListener('click', () => {
         playBtn.src = playIcon;
     }
 });
+
+// when a card is clicked, update the player
+function handleCardClick(e) {
+    const card = e.currentTarget;
+    const src = card.getAttribute('data-src');
+    const title = card.getAttribute('data-title');
+    if (src) {
+        audio.src = src;
+        trackTitleEl.textContent = title || 'Song Title';
+        trackArtistEl.textContent = 'Unknown';
+        audio.play();
+        playBtn.src = pauseIcon;
+        // reset progress display
+        currentTimeEl.textContent = '0:00';
+        progressFilled.style.width = '0%';
+    }
+}
+
+document.querySelectorAll('.card').forEach(c => c.addEventListener('click', handleCardClick));
 
 // seek when user clicks on the progress bar
 progressBar.addEventListener('click', e => {
